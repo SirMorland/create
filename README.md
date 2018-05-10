@@ -40,3 +40,18 @@ create -h
 ```
 
 to get help.
+
+## Currently supported file types:
+
+| Language | File type |
+|---|---|
+| C | c |
+| C++ | cpp |
+| C# | cs |
+| Java | java |
+| HTML | html |
+| CSS | css |
+| JavaScript| js |
+| PHP | php |
+
+You can add your own file types anytime by just creating a `my-file-type.my-file-type` file to `defaults` folder.
