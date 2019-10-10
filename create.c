@@ -116,16 +116,11 @@ int main (int argc, const char* argv[])
 		return -1;
 	}
 
-	char filePath[strlen(fileName) + strlen(fileType) + 100];
-	strcpy(filePath, fileName);
-	strcat(filePath, ".");
-	strcat(filePath, fileType);
-
-	FILE *file = fopen(filePath, "w");
+	FILE *file = fopen(fileName, "w");
 	fprintf(file, "%s", content);
 	fclose(file);
 
-	printf("Created file %s!\n", filePath);
+	printf("Created file %s!\n", fileName);
 
 	return 0;
 }
